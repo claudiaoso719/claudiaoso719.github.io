@@ -9,7 +9,7 @@ body {
     background-color: rgb(190,191,223);
     color: #000000;
     font-family: "Trebuchet MS", Trebuchet, Verdana, sans-serif;
-    font-size: small;
+    font-size: medium;
     text-align: center;
     border: 5px solid rgb(109,114,171);
     min-height: 100vh;
@@ -74,7 +74,7 @@ a:hover {
 
 /* Main Container */
 #outer-wrapper {
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
     text-align: left;
     background-color: rgb(190,191,223);

@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudia Osorio</title>
+    <title>Projects - Claudia Osorio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="header-wrapper">
         <div id="header">
             <h1>Claudia Osorio</h1>
-            <div class="description">Computer Science Student & Research Intern</div>
+            <div class="description">Building Tools for Creative Workflows</div>
         </div>
     </div>
 
     <nav class="solidblockmenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -25,70 +24,162 @@
 
     <div id="outer-wrapper">
         <div id="main-wrapper">
-            <div class="intro-section">
-                <p>Computer Science graduate student with experience in platform engineering and user research, exploring tools programming and game engine development. Currently pursuing my MS at USC while working as a Research Intern at Adobe and serving as Usability Lead on a game project.</p>
-            </div>
+            <div class="project-category">
+            <h2>Academic Projects</h2>
 
-            <div class="post">
-                <h3><a href="projects.html#hot-reloading">PrimeEngine Hot Reloading System</a></h3>
-                <p>Built a real-time script hot reloading pipeline using Lua C API and rolling hash algorithm, enabling developers to see code changes instantly without application restarts. Reduced iteration time by </p>
+            <div class="post" id="multimedia">
+                <h3><a href="#">Computational Jigsaw Puzzle Solver</a></h3>
+                <div class="video-container">
+                    <video controls preload="metadata">
+                        <source src="videos/classes/multimedia/final_multi.mov" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+                <p>Built a computer vision system that automatically solves jigsaw puzzles by extracting piece contours, matching edges using Mean Squared Error analysis, and assembling solutions through greedy graph traversal. Implemented rotation handling with perspective transformation and edge blur correction for rotated pieces.</p>
+                <p><strong>Key Features:</strong> Contour detection and piece extraction, MSE-based edge matching with relaxed matching algorithm, greedy BFS assembly with rotation support, animated solution visualization</p>
+                <p><strong>Impact:</strong> Successfully solved puzzles with both uniform translation and rotation, achieving sub-second assembly times</p>
+                <p><strong>Technologies:</strong> Python, OpenCV, NumPy, Matplotlib</p>
                 <div class="post-footer">
-                    <span class="post-timestamp">Game Engine Development • 2024</span>
+                    <span class="post-timestamp">Multimedia Systems Design • Fall 2025</span>
                 </div>
             </div>
 
-            <div class="post">
-                <h3><a href="projects.html#file-streaming">Network File Streaming Service</a></h3>
-                <p>Designed and implemented a network file streaming service with HTTP server, client-side API, and  caching system for loading game assets. </p>
+            <div class="post" id="engines">
+                <h3><a href="#">Network File Streaming Service</a></h3>
+                <div class="video-container">
+                    <video controls preload="metadata">
+                        <source src="videos/classes/m3/milestone3_demo.mov" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+                <p>Designed and implemented as part of my systems programming studies, this network file streaming service features an HTTP server, client-side API, and intelligent caching system for loading game assets. The demo shows a side-by-side comparison of local vs. network asset loading with real-time performance metrics and interactive cache control. Implemented within PrimeEngine, the custom game engine used for this course.</p>
+                <p><strong>Key Features:</strong> HTTP-based asset server, client-side caching with toggle functionality, visual performance comparison</p>
+                <p><strong>Impact:</strong> Demonstrated understanding of asset pipeline optimization and network-based content delivery for game development</p>
+                <p><strong>Technologies:</strong> C++, HTTP, Caching Systems, Lua API Integration</p>
                 <div class="post-footer">
-                    <span class="post-timestamp">Game Engine Development • 2024</span>
+                    <span class="post-timestamp">Game Engines Coursework • 2024</span>
+                </div>
+            </div>
+            <div class="post" >
+                <h3><a href="#">Hot Reloading System</a></h3>
+                <div class="video-container">
+                    <video controls preload="metadata">
+                        <source src="videos/classes/m2/targetPractice.mov" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+                <p>Built as part of my game engine coursework, this real-time script hot reloading pipeline enables developers to see code changes instantly without application restarts. The system uses a Script Registry to track Lua files and a rolling hash algorithm to detect changes during the game's update loop. When modifications are detected, the Lua C API reloads and executes the updated script logic in the next frame.</p>
+                <p><strong>Key Features:</strong> Script Registry with file monitoring, rolling hash-based change detection, seamless runtime script execution via Lua C API</p>
+                <p><strong>Impact:</strong> Eliminated need for application restarts during development, enabling rapid iteration on game logic and behavior</p>
+                <p><strong>Technologies:</strong> C++, Lua C API, Rolling Hash Algorithm, PrimeEngine</p>
+                <div class="post-footer">
+                    <span class="post-timestamp">Game Engines Coursework • 2024</span>
+                </div>
+            </div>
+        </div>
+
+            <div class="project-category">
+                <h2 id="adobe">Research & Development</h2>
+                <div class="post">
+                    <h3>MotionMate - Adobe Research</h3>
+                    <p>Built an LLM-powered tool to help designers rapidly apply professional animated texts and motion graphics on video using natural language prompts. Implemented multimodal analysis pipeline using TypeScript, Python, and Gemini API to enable content-aware application of professional motion graphics from 100+ Adobe templates to user videos.</p>
+                    <p><strong>Impact:</strong> Bridges the gap between creative vision and technical execution</p>
+                    <p><strong>Technologies:</strong> TypeScript, Python, Gemini API</p>
+                    <div class="post-footer">
+                        <span class="post-timestamp">Research Scientist/Engineer Intern • May 2025 – October 2025</span>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <h3>VoiceMate - Adobe Research</h3>
+                    <p>Built a voice-based copilot addressing challenging VR input methods and complex UI navigation for video editing, enabling hands-free video editing through voice commands, supporting both precise instructions and vague requests. Implemented voice processing pipeline using Swift and Python with Apple SFSpeechRecognizer and Whisper API, featuring two-pass GPT-4o analysis and RAG pipeline.</p>
+                    <p><strong>Impact:</strong> Enables hands-free VR video editing and helps users execute editing actions they envision without needing to navigate complex UI or remember specific button locations</p>
+                    <p><strong>Technologies:</strong> Swift, Python, Apple SFSpeechRecognizer, Whisper API, GPT-4o, RAG Pipeline</p>
+                    <p><strong>Status:</strong> Patent application filed</p>
+                    <div class="post-footer">
+                        <span class="post-timestamp">Research Scientist/Engineer Intern • May 2024 – March 2025</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="post">
-                <h3><a href="projects.html#adobe-tools">Content Creation Tools - Adobe Research</a></h3>
-                <p>Collaborating with Senior Research Scientists.....</p>
-                <div class="post-footer">
-                    <span class="post-timestamp">Research • 2025</span>
+            <div class="project-category">
+                <h2 id="usability">User Experience & Research</h2>
+
+                <div class="post">
+                    <h3>Game Usability Lead</a></h3>
+                    <p>Serving as Usability Lead for an Advanced Games Project team at USC, conducting user research and usability testing. Creating professional usability reports with findings and actionable recommendations for improving player experience.</p>
+                    <p><strong>Technologies:</strong> User research methodology, usability testing, data analysis, reporting</p>
+                    <div class="post-footer">
+                        <span class="post-timestamp">UX Research • Fall 2025</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="more-projects">
-                <p><a href="projects.html">View all projects</a></p>
+            <div class="project-category">
+                <h2 id="swe">Software Engineering</h2>
+
+                <div class="post">
+                    <h3>Twitter Platform Engineering</a></h3>
+                    <p>Contributed to Twitter Platform Engineering's Dynamic Configuration systems supporting 1000s of engineers. Developed automation tools that eliminated reliability risks and improved developer productivity.</p>
+                    <p><strong>Impact:</strong></p>
+                    <ul>
+                        <li>Automated removal of 100s of Git branches weekly, eliminating 30-day persistence reliability risk</li>
+                        <li>Updated critical failover script for multi-datacenter capability</li>
+                        <li>Built emergency Git server management tools achieving 75% time savings</li>
+                    </ul>
+                    <p><strong>Technologies:</strong> Scala, Python, Bash, Puppet</p>
+                    <div class="post-footer">
+                        <span class="post-timestamp">Software Engineer • July 2022 – February 2023</span>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <h3>Twitter Safety Features</a></h3>
+                    <p>Enhanced internal Safety Features System for production behavior changes. Implemented autofill functionality and enforced mandatory comments for debugging. Authored RFCs and led production issue post-mortem documentation.</p>
+                    <p><strong>Impact:</strong> 20% time savings with autofill functionality, improved debugging processes</p>
+                    <p><strong>Technologies:</strong> Scala, JavaScript, SQL</p>
+                    <div class="post-footer">
+                        <span class="post-timestamp">Software Engineer Intern • June 2021 – August 2021</span>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <h3>Nomad Health Platform Development</a></h3>
+                    <p>Built web services and APIs for healthcare job discovery platform. Developed automation scripts with QA team to improve testing workflows.</p>
+                    <p><strong>Impact:</strong> 30% reduction in quality assurance check times</p>
+                    <p><strong>Technologies:</strong> Python, Elasticsearch, MongoDB, Redis, Docker, Kubernetes, React, Java, Selenium</p>
+                    <div class="post-footer">
+                        <span class="post-timestamp">Software Engineer Intern • May 2020 – August 2020</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div id="sidebar-wrapper">
             <div class="sidebar">
                 <div class="widget">
-                    <h2>Quick Facts</h2>
+                    <h2>Project Categories</h2>
                     <ul>
-                        <li><strong>Education:</strong> MS Computer Science, USC</li>
-                        <li><strong>Current:</strong> Adobe Research Intern</li>
-                        <li><strong>Focus:</strong> Learning Tools Programming</li>
-                        <li><strong>Interests:</strong> Game Engines, User Research</li>
+                        <li><a href="#multimedia">Computer Vision & Multimedia</a></li>
+                        <li><a href="#engines">Game Engine Development</a></li>
+                        <li><a href="#adobe">Research & Development</a></li>
+                        <li><a href="#usability">User Experience & Research</a></li>
+                        <li><a href="#swe">Software Engineering</a></li>
                     </ul>
                 </div>
 
                 <div class="widget">
-                    <h2>Skills</h2>
+                    <h2>Technologies</h2>
                     <ul>
-                        <li>C++, Python, TypeScript</li>
-                        <li>Game Engine Development</li>
-                        <li>Graphics Programming</li>
-                        <li>Hot Reloading Systems</li>
-                        <li>Asset Pipeline Tools</li>
-                        <li>User Research & UX</li>
+                        <li>Python, Swift, C++</li>
+                        <li>Scala, TypeScript, JavaScript</li>
+                        <li>Lua C API, SQL</li>
+                        <li>VR, Large Language Models</li>
                     </ul>
                 </div>
-
                 <div class="widget">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li><a href="mailto:claudiaoso719@gmail.com">claudiaoso719@gmail.com</a></li>
-                        <li><a href="https://linkedin.com/in/claudia-osorio-swe">LinkedIn</a></li>
-                        <li><a href="contact.html">Resume & More</a></li>
-                    </ul>
+                    <h2>Current Learning</h2>
+                    <p>Learning Houdini for procedural generation and VFX workflows. Passionate about building tools and efficient pipelines for game and VFX development teams.</p>
                 </div>
             </div>
         </div>
