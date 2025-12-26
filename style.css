@@ -33,38 +33,43 @@ a:hover {
 /* Header */
 #header-wrapper {
     width: 800px;
-    height: 400px;
+    height: 250px;
     margin: 0 auto;
     background: url("photos/header.JPG") center center;
     background-size: cover;
 }
 
 #header {
-    height: 400px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #000000;
-    border: 1px solid rgb(109,114,171);
+    color: #FFFFFF;
+    /* border: 1px solid rgb(109,114,171); */
+    /* background: rgba(0,0,0,0.3); */
+    background: rgba(109,114,171,0.15);
+    backdrop-filter: blur(2px);
+    border: 3px double rgb(109,114,171);
+    
 }
 
 #header h1 {
     font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: #000000;
+    color: #FFFFFF;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(109,114,171,0.3);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 #header .description {
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: rgb(109,114,171);
+    color: #FFFFFF;
     max-width: 400px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 /* Main Container */
@@ -116,6 +121,55 @@ a:hover {
     background-color: rgb(190,191,223);
 }
 
+/* Intro Section */
+.intro-section {
+    margin: 0 0 20px 0;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid rgb(109,114,171);
+    color: #000000;
+    font-style: italic;
+}
+
+/* Project Categories */
+.project-category {
+    margin-bottom: 30px;
+}
+
+.project-category h2 {
+    color: rgb(109,114,171);
+    border-bottom: 2px solid rgb(109,114,171);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+}
+
+#me {
+    width: 100%;
+    border: 2px solid rgb(109,114,171);
+    border-radius: 5px;
+}
+
+/* More Projects Link */
+.more-projects {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.more-projects a {
+    color: rgb(109,114,171);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.more-projects a:hover {
+    text-decoration: underline;
+}
+
+/* Posts */
 .post {
     margin: 0 0 20px 0;
     padding: 15px;
@@ -151,6 +205,11 @@ a:hover {
 
 .post p {
     margin: 10px 0;
+    line-height: 1.4em;
+}
+
+.post ul {
+    margin: 10px 0 10px 20px;
     line-height: 1.4em;
 }
 
@@ -207,6 +266,14 @@ a:hover {
     line-height: 1.2em;
 }
 
+.sidebar a {
+    color: rgb(109,114,171);
+}
+
+.sidebar a:hover {
+    color: #9370DB;
+}
+
 /* Footer */
 #footer {
     width: 800px;
@@ -218,4 +285,18 @@ a:hover {
     color: rgb(109,114,171);
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 1em auto;
+    background: #000;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
 }
