@@ -300,3 +300,8 @@ a:hover {
     height: auto;
     display: block;
 }
+
+#puzzle {
+    width: 65%;
+     margin: 0 auto;
+}
