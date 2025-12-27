@@ -47,28 +47,28 @@
             <div class="post" id="engines">
                 <h3><a href="#">Network File Streaming Service</a></h3>
                 <div class="video-container">
-                    <video controls preload="metadata">
-                        <source src="videos/classes/m3/milestone3_demo.mov" type="video/mp4">
+                    <video controls autoplay loop muted playsinline preload="metadata">
+                        <source src="video/engines/demo2.1.mp4" type="video/mp4">
                         Your browser doesn't support video playback.
                     </video>
                 </div>
-                <p>Designed and implemented as part of my systems programming studies, this network file streaming service features an HTTP server, client-side API, and intelligent caching system for loading game assets. The demo shows a side-by-side comparison of local vs. network asset loading with real-time performance metrics and interactive cache control. Implemented within PrimeEngine, the custom game engine used for this course.</p>
-                <p><strong>Key Features:</strong> HTTP-based asset server, client-side caching with toggle functionality, visual performance comparison</p>
+                <p>Built a network file streaming service with HTTP server and intelligent caching system for game asset loading. The demo shows side-by-side spawning of car meshes - the right car loads locally while the left car streams from the network server. Real-time performance metrics display load times, demonstrating the caching system's impact: first network load takes ~0.13 seconds, subsequent cached loads complete nearly instantly. Cache can be toggled on/off to show performance differences.</p>
+                <p><strong>Key Features:</strong> HTTP-based asset server, client-side caching with runtime toggle, real-time performance metrics display, visual differentiation between local and network-loaded assets</p>
                 <p><strong>Impact:</strong> Demonstrated understanding of asset pipeline optimization and network-based content delivery for game development</p>
-                <p><strong>Technologies:</strong> C++, HTTP, Caching Systems, Lua API Integration</p>
+                <p><strong>Technologies:</strong> C++, Python HTTP Server, Caching Systems, Lua API Integration, PrimeEngine</p>
                 <div class="post-footer">
                     <span class="post-timestamp">Game Engines Coursework • 2024</span>
                 </div>
             </div>
-            <div class="post" >
+            <div class="post">
                 <h3><a href="#">Hot Reloading System</a></h3>
                 <div class="video-container">
-                    <video controls preload="metadata">
-                        <source src="videos/classes/m2/targetPractice.mov" type="video/mp4">
+                    <video controls autoplay loop muted playsinline preload="metadata">
+                        <source src="video/engines/demo1.mov" type="video/mp4">
                         Your browser doesn't support video playback.
                     </video>
                 </div>
-                <p>Built as part of my game engine coursework, this real-time script hot reloading pipeline enables developers to see code changes instantly without application restarts. The system uses a Script Registry to track Lua files and a rolling hash algorithm to detect changes during the game's update loop. When modifications are detected, the Lua C API reloads and executes the updated script logic in the next frame.</p>
+                <p>Built as part of my game engine coursework, this real-time script hot reloading pipeline enables developers to see code changes instantly without application restarts. The demo shows a soldier tracking and shooting at a moving target controlled by Lua script. Mid-gameplay, I modify the script to stop the target's movement and reload it - the soldier continues tracking but the target immediately stops, demonstrating live script updates without restarting the game.</p>
                 <p><strong>Key Features:</strong> Script Registry with file monitoring, rolling hash-based change detection, seamless runtime script execution via Lua C API</p>
                 <p><strong>Impact:</strong> Eliminated need for application restarts during development, enabling rapid iteration on game logic and behavior</p>
                 <p><strong>Technologies:</strong> C++, Lua C API, Rolling Hash Algorithm, PrimeEngine</p>
@@ -173,8 +173,10 @@
                     <ul>
                         <li>Python, Swift, C++</li>
                         <li>Scala, TypeScript, JavaScript</li>
-                        <li>Lua C API, SQL</li>
-                        <li>VR, Large Language Models</li>
+                        <li>OpenCV, NumPy, Matplotlib</li>
+                        <li>Lua C API, Game Engines</li>
+                        <li>LLMs (GPT-4o, Gemini, Whisper)</li>
+                        <li>Computer Vision, VR/AR</li>
                     </ul>
                 </div>
                 <div class="widget">
