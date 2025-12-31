@@ -28,7 +28,7 @@
             <h2>Academic Projects</h2>
 
             <div class="post" id="multimedia">
-                <h3><a href="#">Computational Jigsaw Puzzle Solver</a></h3>
+                <h3>Computational Jigsaw Puzzle Solver</h3>
                 <div class="video-container">
                 <video id="puzzle" autoplay loop muted playsinline preload="metadata">
                         <source src="video/multimedia/demo.mov" type="video/mp4">
@@ -45,7 +45,7 @@
             </div>
 
             <div class="post" id="engines">
-                <h3><a href="#">Network File Streaming Service</a></h3>
+                <h3>Network File Streaming Service</h3>
                 <div class="video-container">
                     <video controls autoplay loop muted playsinline preload="metadata">
                         <source src="video/engines/demo2.1.mp4" type="video/mp4">
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="post">
-                <h3><a href="#">Hot Reloading System</a></h3>
+                <h3>Hot Reloading System</h3>
                 <div class="video-container">
                     <video controls autoplay loop muted playsinline preload="metadata">
                         <source src="video/engines/demo1.mov" type="video/mp4">
@@ -76,6 +76,39 @@
                     <span class="post-timestamp">Game Engine Development • Spring 2025</span>
                 </div>
             </div>
+        </div>
+
+        <div class="project-category">
+        <h2>Personal Projects</h2>
+        <div class="post" id="houdini-snapshot">
+            <h3>Network Snapshot/Diff Tool</h3>
+            
+            <div class="video-container">
+                <video id="snapshot-demo" controls autoplay loop muted playsinline preload="metadata">
+                    <source src="video/network_tool/network_tool.mp4" type="video/mp4">
+                    Your browser doesn't support video playback.
+                </video>
+            </div>
+            
+            <p>Built a pipeline tool for Houdini that tracks and compares changes in node networks across different workflow stages. Captures comprehensive snapshots including node parameters, connections, and positions, then performs differential analysis to identify additions, deletions, and modifications with visual highlighting in the viewport.</p>
+            
+            <p><strong>Key Features:</strong> Automated network state capture with parameter tracking, comparative analysis between snapshots with visual diff display, custom PySide6 UI with dropdown-based snapshot selection, color-coded viewport highlighting (green highlights added nodes, yellow highlights modified nodes)</p>
+            
+            <p><strong>Impact:</strong> Enables artists to track workflow iterations and debug complex node networks by providing clear visualization of changes between different setup stages</p>
+            
+            <p><strong>Technologies:</strong> Python, PySide6, Houdini Python API (HOM), JSON serialization, Qt Designer</p>
+            
+            <div class="project-image-wrapper">
+                <img src="photos/personal_project/duo_image.png" alt="Network Snapshot Tool interface and viewport highlighting">
+                <div class="project-image-caption">
+                    Tool UI (left) showing comparison results, with corresponding color-coded node highlighting in the Houdini viewport (right)
+                </div>
+            </div>
+            
+            <div class="post-footer">
+                <span class="post-timestamp">Personal Project • December 2025</span>
+            </div>
+        </div>
         </div>
 
             <div class="project-category">
@@ -162,6 +195,7 @@
                     <ul>
                         <li><a href="#multimedia">Computer Vision & Multimedia</a></li>
                         <li><a href="#engines">Game Engine Development</a></li>
+                        <li><a href="#personal">Personal Projects</a></li>
                         <li><a href="#adobe">Research & Development</a></li>
                         <li><a href="#usability">User Experience & Research</a></li>
                         <li><a href="#swe">Software Engineering</a></li>
