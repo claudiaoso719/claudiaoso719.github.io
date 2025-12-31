@@ -1,4 +1,3 @@
-/* Reset and Body */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +29,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header */
 #header-wrapper {
     width: 800px;
     height: 250px;
@@ -72,7 +70,6 @@ a:hover {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
-/* Main Container */
 #outer-wrapper {
     width: 1250px;
     margin: 0 auto;
@@ -84,7 +81,6 @@ a:hover {
     padding: 20px;
 }
 
-/* Navigation Menu */
 .solidblockmenu {
     margin: 0;
     padding: 0;
@@ -115,13 +111,11 @@ a:hover {
     background: rgb(190,191,223);
 }
 
-/* Main Content */
 #main-wrapper {
     flex: 2;
     background-color: rgb(190,191,223);
 }
 
-/* Intro Section */
 .intro-section {
     margin: 0 0 20px 0;
     padding: 15px;
@@ -131,7 +125,6 @@ a:hover {
     font-style: italic;
 }
 
-/* Project Categories */
 .project-category {
     margin-bottom: 30px;
 }
@@ -152,7 +145,6 @@ a:hover {
     border-radius: 5px;
 }
 
-/* More Projects Link */
 .more-projects {
     text-align: center;
     margin-top: 20px;
@@ -169,7 +161,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Posts */
 .post {
     margin: 0 0 20px 0;
     padding: 15px;
@@ -224,7 +215,6 @@ a:hover {
     border-bottom: 1px dotted rgb(109,114,171);
 }
 
-/* Sidebar */
 #sidebar-wrapper {
     flex: 1;
     background-color: rgb(190,191,223);
@@ -274,7 +264,6 @@ a:hover {
     color: #9370DB;
 }
 
-/* Footer */
 #footer {
     width: 800px;
     margin: 20px auto;
