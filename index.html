@@ -27,6 +27,30 @@
 
         <div class="project-category">
         <h2 id="personal">Personal Projects</h2>
+
+        <div class="post" id="houdini-crop">
+            <h3>BoundingBoxCrop SOP Plugin</h3>
+            
+            <div class="video-container">
+                <video id="crop-demo" controls autoplay loop muted playsinline preload="metadata">
+                    <source src="video/crop_tool/BoundingBoxCrop.mp4" type="video/mp4">
+                    Your browser doesn't support video playback.
+                </video>
+            </div>
+            
+            <p>Built a custom C++ HDK plugin for Houdini that clips polygon meshes to a user-defined bounding box. Instead of simply deleting outside points (which collapses the mesh), the tool finds where each edge crosses the box boundary, inserts a new vertex at that exact crossing, and rebuilds the polygon using only the geometry that falls inside the box.</p>
+            
+            <p><strong>Key Features:</strong> Per-polygon boundary classification, edge-plane intersection math with box face validation, dynamic vertex insertion at crossing points, full polygon reconstruction for clipped faces</p>
+            
+            <p><strong>Impact:</strong> Produces clean geometric cuts without mesh deformation, making it suitable for use in VFX and game asset pipelines</p>
+            
+            <p><strong>Technologies:</strong> C++, Houdini HDK, Houdini Python API, SOP Node Architecture</p>
+            
+            <div class="post-footer">
+                <span class="post-timestamp">Personal Project • April 2026</span>
+            </div>
+        </div>
+
         <div class="post" id="houdini-snapshot">
             <h3>Network Snapshot/Diff Tool</h3>
             
